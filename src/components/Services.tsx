@@ -32,30 +32,32 @@ export default function ServicesSection({ highlightedService }: ServicesSectionP
       if (serviceElement) {
         serviceElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
         setActiveService(highlightedService);
-        setTimeout(() => setActiveService(null), 10000); // Remove highlight after 2 seconds
+        setTimeout(() => setActiveService(null), 10000); // Remove highlight after 10 seconds
       }
     }
   }, [highlightedService]);
 
   return (
-    <div className="py-12 mt-12">
+    <div className="py-8 md:py-12 mt-12">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-[#C1DDF3] mb-8">Our Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center text-[#C1DDF3] mb-6 sm:mb-8">Our Services</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {services.map((service) => (
             <div
               key={service.id}
               id={service.id}
-              className={`bg-[#C1DDF3] shadow-lg overflow-hidden ${activeService === service.id ? 'border-4 border-[#304F8C]' : ''}`}
+              className={`bg-[#C1DDF3] shadow-lg overflow-hidden transition-transform duration-1000 ${
+                activeService === service.id ? 'shadow-2xl scale-105' : ''
+              }`}
             >
-              <img src={service.image} alt={service.title} className="w-full h-48 object-cover" />
-              <div className="px-6 py-2">
-                <h3 className="text-xl font-semibold text-[#304F8C] mb-2">{service.title}</h3>
-                <p className="text-gray-700 mb-4">{service.description}</p>
+              <img src={service.image} alt={service.title} className="w-full h-40 sm:h-48 object-cover" />
+              <div className="px-4 sm:px-6 py-2 sm:py-4">
+                <h3 className="text-lg sm:text-xl font-semibold text-[#304F8C] mb-2">{service.title}</h3>
+                <p className="text-gray-700 text-sm sm:text-base mb-4">{service.description}</p>
               </div>
-              <div className="flex justify-end">
+              <div className="flex justify-end px-4 pb-4">
                 <button
-                  className="bg-green-500 text-white font-semibold py-2 px-4 hover:bg-green-600 transition-colors duration-300"
+                  className="bg-green-500 text-white text-sm sm:text-base font-semibold py-2 px-4 hover:bg-green-600 transition-colors duration-300"
                   onClick={() => alert(`Request a quote for ${service.title}`)}
                 >
                   Request a Quote
