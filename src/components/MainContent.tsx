@@ -1,8 +1,8 @@
 export default function MainContent() {
   return (
-    <div className="bg-[#C1DDF3] text-[#304F8C] px-4 sm:px-8 py-8 sm:py-12 max-w-4xl mx-auto flex flex-col sm:flex-row items-center">
+    <div className="bg-[#C1DDF3] text-[#304F8C] px-4 py-8 sm:py-12 w-full mx-auto flex flex-col sm:flex-row items-center">
       {/* Text Section */}
-      <div className="flex-1 mb-8 sm:mb-0 text-center sm:text-left">
+      <div className="flex-1 mb-8 sm:mb-0 text-center sm:text-left px-4">
         <h1 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">True Build</h1>
         <p className="text-base sm:text-lg leading-relaxed">
           True Build was founded after years of witnessing construction companies building and renovating without any quality control of materials or adhering to recognized building practices enforced by building code appliance.
@@ -13,11 +13,11 @@ export default function MainContent() {
       </div>
 
       {/* Image Section */}
-      <div className="sm:ml-8 flex justify-center">
+      <div className="sm:ml-8 flex justify-center w-full sm:w-auto px-4 sm:px-0">
         <img
           src="/TioLee.jpeg"  // Replace with your actual image path
           alt="About True Build"
-          className="w-48 h-48 sm:w-96 sm:h-96 object-cover rounded-full border-2 border-[#304F8C]"
+          className="w-full max-w-xs sm:w-96 h-auto object-cover rounded-full border-2 border-[#304F8C]"
         />
       </div>
     </div>
