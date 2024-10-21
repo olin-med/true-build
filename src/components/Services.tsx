@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 interface Service {
   id: string;
@@ -101,13 +102,13 @@ export default function ServicesSection({ highlightedService }: ServicesSectionP
   return (
     <div className="py-8 md:py-12 mt-12">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl sm:text-3xl font-bold text-center text-[#C1DDF3] mb-6 sm:mb-8">Our Services</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold text-center text-[#fff6ed] mb-6 sm:mb-8">Our Services</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {services.map((service) => (
             <div
               key={service.id}
               id={service.id}
-              className={`bg-[#C1DDF3] shadow-lg overflow-hidden transition-transform duration-1000 ${
+              className={`bg-[#fff6ed] shadow-lg overflow-hidden transition-transform duration-1000 ${
                 activeService === service.id ? 'shadow-2xl scale-105' : ''
               }`}
             >
@@ -118,10 +119,11 @@ export default function ServicesSection({ highlightedService }: ServicesSectionP
               </div>
               <div className="flex justify-end px-4 pb-4">
                 <button
-                  className="bg-green-500 text-white text-sm sm:text-base font-semibold py-2 px-4 hover:bg-green-600 transition-colors duration-300"
+                  className="bg-green-500 text-white text-sm sm:text-base font-semibold py-2 px-4 hover:bg-green-600 transition-colors duration-300 flex items-center"
                   onClick={() => handleWhatsAppRedirect(service.whatsappMessage)}
                 >
                   Request a Quote
+                  <FaWhatsapp size={20} className="ml-2" />
                 </button>
               </div>
             </div>

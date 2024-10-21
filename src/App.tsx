@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className="w-full h-full">
       <Navbar onServiceSelect={setHighlightedService} />
-      <div className="w-full h-full p-4 sm:p-8 md:p-16 bg-[#568DC3]">
+      <div className="w-full h-full p-4 sm:p-8 md:p-16 bg-[#304F8C]">
         {/* Main content section */}
         <MainContent />
         

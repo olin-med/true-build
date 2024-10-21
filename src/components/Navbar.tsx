@@ -16,7 +16,7 @@ export default function Navbar({ onServiceSelect }: NavbarProps) {
   };
 
   return (
-    <div className="flex flex-row justify-between items-center bg-[#C1DDF3] py-2 px-8 relative z-10">
+    <div className="flex flex-row justify-between items-center bg-[#fff6ed] py-2 px-8 relative z-10">
       <img src="/Logo.png" alt="Logo" className="w-24" />
 
       {/* Hamburger Icon for mobile */}
@@ -38,41 +38,41 @@ export default function Navbar({ onServiceSelect }: NavbarProps) {
         >
           Services
           {isServicesDropdownOpen && (
-            <ul className="absolute left-0 mt-2 w-96 bg-[#C1DDF3] text-[#304F8C] border border-[#304F8C] rounded shadow-lg z-20 p-4 grid grid-cols-2 gap-4"
+            <ul className="absolute left-0 mt-2 w-96 bg-[#fff6ed] text-[#304F8C] border border-[#304F8C] rounded shadow-lg z-20 p-4 grid grid-cols-2 gap-4"
             onMouseLeave={() => setIsServicesDropdownOpen(false)}
             >
               <div>
                 <li className="px-4 py-2 font-bold text-blue-900">General Services</li>
-                <li className="px-4 py-2 hover:bg-[#92a8b8] cursor-pointer" onClick={() => handleServiceClick('home-inspections')}>
+                <li className="px-4 py-2 hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => handleServiceClick('home-inspections')}>
                   Home Inspections
                 </li>
-                <li className="px-4 py-2 hover:bg-[#92a8b8] cursor-pointer" onClick={() => handleServiceClick('painting')}>
+                <li className="px-4 py-2 hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => handleServiceClick('painting')}>
                   Painting
                 </li>
-                <li className="px-4 py-2 hover:bg-[#92a8b8] cursor-pointer" onClick={() => handleServiceClick('drywall')}>
+                <li className="px-4 py-2 hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => handleServiceClick('drywall')}>
                   Drywall
                 </li>
-                <li className="px-4 py-2 hover:bg-[#92a8b8] cursor-pointer" onClick={() => handleServiceClick('flooring')}>
+                <li className="px-4 py-2 hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => handleServiceClick('flooring')}>
                   Flooring
                 </li>
                 <li className="px-4 py-2 font-bold text-blue-900">Interior Projects</li>
-                <li className="px-4 py-2 hover:bg-[#92a8b8] cursor-pointer" onClick={() => handleServiceClick('kitchen-bathroom')}>
+                <li className="px-4 py-2 hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => handleServiceClick('kitchen-bathroom')}>
                   Kitchen and Bathroom
                 </li>
               </div>
               <div>
                 <li className="px-4 py-2 font-bold text-blue-900">Exterior Projects</li>
-                <li className="px-4 py-2 hover:bg-[#92a8b8] cursor-pointer" onClick={() => handleServiceClick('roofing')}>
+                <li className="px-4 py-2 hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => handleServiceClick('roofing')}>
                   Roofing
                 </li>
-                <li className="px-4 py-2 hover:bg-[#92a8b8] cursor-pointer" onClick={() => handleServiceClick('driveways')}>
+                <li className="px-4 py-2 hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => handleServiceClick('driveways')}>
                   Driveways
                 </li>
-                <li className="px-4 py-2 hover:bg-[#92a8b8] cursor-pointer" onClick={() => handleServiceClick('pool-resurfacing')}>
+                <li className="px-4 py-2 hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => handleServiceClick('pool-resurfacing')}>
                   Pool Resurfacing
                 </li>
                 <li className="px-4 py-2 font-bold text-blue-900">Special Services</li>
-                <li className="px-4 py-2 hover:bg-[#92a8b8] cursor-pointer" onClick={() => handleServiceClick('leak-detection-repair')}>
+                <li className="px-4 py-2 hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => handleServiceClick('leak-detection-repair')}>
                   Leak Detection and Repair
                 </li>
               </div>
@@ -87,41 +87,41 @@ export default function Navbar({ onServiceSelect }: NavbarProps) {
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <ul className="absolute top-full left-0 right-0 bg-[#C1DDF3] text-[#304F8C] font-medium p-4 flex flex-col space-y-4 sm:hidden z-10">
+        <ul className="absolute top-full left-0 right-0 bg-[#fff6ed] text-[#304F8C] font-medium p-4 flex flex-col space-y-4 sm:hidden z-10">
           <li className="hover:text-blue-700 cursor-pointer" onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}>
             Services
           </li>
           {isServicesDropdownOpen && (
             <ul className="bg-[#C1DDF3] p-4 space-y-2">
               <li className="px-4 py-2 font-bold text-blue-900">General Services</li>
-              <li className="px-4 py-2 hover:bg-[#92a8b8] cursor-pointer" onClick={() => handleServiceClick('home-inspections')}>
+              <li className="px-4 py-2 hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => handleServiceClick('home-inspections')}>
                 Home Inspections
               </li>
-              <li className="px-4 py-2 hover:bg-[#92a8b8] cursor-pointer" onClick={() => handleServiceClick('painting')}>
+              <li className="px-4 py-2 hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => handleServiceClick('painting')}>
                 Painting
               </li>
-              <li className="px-4 py-2 hover:bg-[#92a8b8] cursor-pointer" onClick={() => handleServiceClick('drywall')}>
+              <li className="px-4 py-2 hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => handleServiceClick('drywall')}>
                 Drywall
               </li>
-              <li className="px-4 py-2 hover:bg-[#92a8b8] cursor-pointer" onClick={() => handleServiceClick('flooring')}>
+              <li className="px-4 py-2 hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => handleServiceClick('flooring')}>
                 Flooring
               </li>
               <li className="px-4 py-2 font-bold text-blue-900">Interior Projects</li>
-              <li className="px-4 py-2 hover:bg-[#92a8b8] cursor-pointer" onClick={() => handleServiceClick('kitchen-bathroom')}>
+              <li className="px-4 py-2 hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => handleServiceClick('kitchen-bathroom')}>
                 Kitchen and Bathroom
               </li>
               <li className="px-4 py-2 font-bold text-blue-900">Exterior Projects</li>
-              <li className="px-4 py-2 hover:bg-[#92a8b8] cursor-pointer" onClick={() => handleServiceClick('roofing')}>
+              <li className="px-4 py-2 hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => handleServiceClick('roofing')}>
                 Roofing
               </li>
-              <li className="px-4 py-2 hover:bg-[#92a8b8] cursor-pointer" onClick={() => handleServiceClick('driveways')}>
+              <li className="px-4 py-2 hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => handleServiceClick('driveways')}>
                 Driveways
               </li>
-              <li className="px-4 py-2 hover:bg-[#92a8b8] cursor-pointer" onClick={() => handleServiceClick('pool-resurfacing')}>
+              <li className="px-4 py-2 hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => handleServiceClick('pool-resurfacing')}>
                 Pool Resurfacing
               </li>
               <li className="px-4 py-2 font-bold text-blue-900">Special Services</li>
-              <li className="px-4 py-2 hover:bg-[#92a8b8] cursor-pointer" onClick={() => handleServiceClick('leak-detection-repair')}>
+              <li className="px-4 py-2 hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => handleServiceClick('leak-detection-repair')}>
                 Leak Detection and Repair
               </li>
             </ul>

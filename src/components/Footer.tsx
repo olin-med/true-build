@@ -2,7 +2,7 @@ import { FaFacebookF, FaWhatsapp, FaEnvelope } from 'react-icons/fa'; // Importa
 
 export default function Footer() {
   return (
-    <footer className="bg-[#C1DDF3] text-[#304F8C] py-24">
+    <footer className="bg-[#fff6ed] text-[#304F8C] py-24">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         {/* Seção de Licença */}
         <div className="mb-4 md:mb-0">
@@ -23,7 +23,7 @@ export default function Footer() {
             href="https://www.facebook.com/profile.php?id=100095209029942&sk=about" // Insira seu link do Facebook aqui
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-blue-500 transition-colors duration-300"
+            className="text-[#304F8C] hover:text-blue-500 transition-colors duration-300"
           >
             <FaFacebookF size={24} />
           </a>
@@ -35,14 +35,14 @@ export default function Footer() {
             href="https://wa.me/14073600307?text=Hello%20there!%20I'm%20interested%20in%20your%20services."  // Insira o número do WhatsApp aqui no formato internacional
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-green-500 transition-colors duration-300"
+            className="text-[#304F8C] hover:text-green-500 transition-colors duration-300"
           >
             <FaWhatsapp size={24} />
           </a>
           {/* Link para Facebook */}
           <a
             href="mailto:truebuildfl@gmail.com" 
-            className='text-white hover:text-red-700'>
+            className='text-[#304F8C] hover:text-red-700'>
             <FaEnvelope size={24} />
           </a>
           <a>

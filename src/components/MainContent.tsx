@@ -1,6 +1,6 @@
 export default function MainContent() {
   return (
-    <div className="bg-[#C1DDF3] text-[#304F8C] px-4 py-8 sm:py-12 w-full mx-auto flex flex-col sm:flex-row items-center">
+    <div className="bg-[#fff6ed] text-[#304F8C] px-4 py-8 sm:py-12 w-full mx-auto flex flex-col sm:flex-row items-center">
       {/* Text Section */}
       <div className="flex-1 mb-8 sm:mb-0 text-center sm:text-left px-4">
         <h1 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">True Build</h1>
