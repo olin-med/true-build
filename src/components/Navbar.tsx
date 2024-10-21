@@ -129,7 +129,6 @@ export default function Navbar({ onServiceSelect }: NavbarProps) {
           <li className="hover:text-blue-700 cursor-pointer">Gallery</li>
           <li className="hover:text-blue-700 cursor-pointer">About Us</li>
           <li className="hover:text-blue-700 cursor-pointer">Testimonials</li>
-          <li className="hover:text-blue-700 cursor-pointer">Contact</li>
         </ul>
       )}
     </div>

@@ -1,4 +1,4 @@
-import { FaFacebookF, FaWhatsapp } from 'react-icons/fa'; // Importando ícones
+import { FaFacebookF, FaWhatsapp, FaEnvelope } from 'react-icons/fa'; // Importando ícones
 
 export default function Footer() {
   return (
@@ -12,21 +12,23 @@ export default function Footer() {
         {/* Seção de Endereço */}
         <div className="mb-4 md:mb-0">
           <p className="flex items-center">
-            <span className="mr-2">📍</span> 123 Main Street, Orlando, FL 32801
+            <span className="mr-2">📍</span> Clermont, FL, United States, 34714
           </p>
         </div>
 
         {/* Links de Redes Sociais */}
         <div className="flex space-x-4">
-          {/* Link para Facebook */}
+          
           <a
-            href="https://facebook.com/truebuild" // Insira seu link do Facebook aqui
+            href="https://www.facebook.com/profile.php?id=100095209029942&sk=about" // Insira seu link do Facebook aqui
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-blue-500 transition-colors duration-300"
           >
             <FaFacebookF size={24} />
           </a>
+
+          
 
           {/* Link para WhatsApp */}
           <a
@@ -37,6 +39,16 @@ export default function Footer() {
           >
             <FaWhatsapp size={24} />
           </a>
+          {/* Link para Facebook */}
+          <a
+            href="mailto:truebuildfl@gmail.com" 
+            className='text-white hover:text-red-700'>
+            <FaEnvelope size={24} />
+          </a>
+          <a>
+            truebuildfl@gmail.com
+          </a>
+          {/* Link para Facebook */}
         </div>
       </div>
     </footer>
