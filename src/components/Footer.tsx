@@ -30,7 +30,7 @@ export default function Footer() {
 
           {/* Link para WhatsApp */}
           <a
-            href="https://wa.me/14073600307" // Insira o número do WhatsApp aqui no formato internacional
+            href="https://wa.me/14073600307?text=Hello%20there!%20I'm%20interested%20in%20your%20services."  // Insira o número do WhatsApp aqui no formato internacional
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-green-500 transition-colors duration-300"
