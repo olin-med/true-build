@@ -18,8 +18,6 @@ export default function App() {
         {/* Services section with highlighted service logic */}
         <ServicesSection highlightedService={highlightedService} />
         
-        {/* Gallery section */}
-        <Gallery />
       </div>
       <Footer />
     </div>

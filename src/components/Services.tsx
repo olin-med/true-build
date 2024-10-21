@@ -21,7 +21,7 @@ export default function ServicesSection({ highlightedService }: ServicesSectionP
     { id: 'roofing', title: 'Roofing', image: '/Inspection.jpeg', description: 'Reliable roofing services to protect your home from the elements.' },
     { id: 'driveways', title: 'Driveways', image: '/Driveway.jpeg', description: 'Sturdy and beautiful driveway construction and repair.' },
     { id: 'pool-resurfacing', title: 'Pool Resurfacing', image: '/Piscina.jpeg', description: 'Keep your pool in top shape with our resurfacing services.' },
-    { id: 'leak-detection-repair', title: 'Leak Detection and Repair', image: '/Inspection.jpeg', description: 'Quick and efficient leak detection and repair services.' },
+    { id: 'leak-detection-repair', title: 'Leak Detection and Repair', image: '/Leak.jpeg', description: 'Quick and efficient leak detection and repair services.' },
   ];
 
   const [activeService, setActiveService] = useState<string | null>(null);
