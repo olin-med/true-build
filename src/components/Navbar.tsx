@@ -92,8 +92,8 @@ export default function Navbar({ onServiceSelect }: NavbarProps) {
             Services
           </li>
           {isServicesDropdownOpen && (
-            <ul className="bg-[#C1DDF3] p-4 space-y-2">
-              <li className="px-4 py-2 font-bold text-blue-900">General Services</li>
+            <ul className="bg-[#fff6ed] p-4 space-y-2">
+              <li className="px-4 py-2 font-bold text-[#304F8C]">General Services</li>
               <li className="px-4 py-2 hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => handleServiceClick('home-inspections')}>
                 Home Inspections
               </li>
