@@ -32,7 +32,7 @@ export default function Navbar({ onServiceSelect }: NavbarProps) {
       {/* Desktop Menu */}
       <ul className="hidden sm:flex space-x-8 font-medium text-[#304F8C]">
         <li
-          className="relative cursor-pointer"
+          className="relative hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer"
           onMouseEnter={() => setIsServicesDropdownOpen(true)}
           
         >
@@ -79,16 +79,16 @@ export default function Navbar({ onServiceSelect }: NavbarProps) {
             </ul>
           )}
         </li>
-        <li className="cursor-pointer">Gallery</li>
-        <li className="cursor-pointer">About Us</li>
-        <li className="cursor-pointer">Testimonials</li>
-        <li className="cursor-pointer">Contact</li>
+        <li className="hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer">Gallery</li>
+        <li className="hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer">About Us</li>
+        <li className="hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer">Testimonials</li>
+        <li className="hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer">Contact</li>
       </ul>
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
         <ul className="absolute top-full left-0 right-0 bg-[#fff6ed] text-[#304F8C] font-medium p-4 flex flex-col space-y-4 sm:hidden z-10">
-          <li className="hover:text-blue-700 cursor-pointer" onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}>
+          <li className="hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}>
             Services
           </li>
           {isServicesDropdownOpen && (
@@ -126,9 +126,9 @@ export default function Navbar({ onServiceSelect }: NavbarProps) {
               </li>
             </ul>
           )}
-          <li className="hover:text-blue-700 cursor-pointer">Gallery</li>
-          <li className="hover:text-blue-700 cursor-pointer">About Us</li>
-          <li className="hover:text-blue-700 cursor-pointer">Testimonials</li>
+          <li className="hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer">Gallery</li>
+          <li className="hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer">About Us</li>
+          <li className="hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer">Testimonials</li>
         </ul>
       )}
     </div>
