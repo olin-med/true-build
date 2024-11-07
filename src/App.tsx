@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Navbar from "./components/Navbar";
 import MainContent from "./components/MainContent";
 import ServicesSection from "./components/Services";
+import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -16,6 +17,9 @@ export default function App() {
         
         {/* Services section with highlighted service logic */}
         <ServicesSection highlightedService={highlightedService} />
+
+        {/* Testimonials section */}
+        <Testimonials />
         
       </div>
       <Footer />

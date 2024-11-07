@@ -81,7 +81,9 @@ export default function Navbar({ onServiceSelect }: NavbarProps) {
         </li>
         <li className="hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer">Gallery</li>
         <li className="hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer">About Us</li>
-        <li className="hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer">Testimonials</li>
+        <li className="hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => handleServiceClick('testimonials')}>
+          Testimonials
+        </li>
         <li className="hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer">Contact</li>
       </ul>
 
@@ -128,7 +130,9 @@ export default function Navbar({ onServiceSelect }: NavbarProps) {
           )}
           <li className="hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer">Gallery</li>
           <li className="hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer">About Us</li>
-          <li className="hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer">Testimonials</li>
+          <li className="hover:bg-[#304F8C] hover:text-[#fff6ed] cursor-pointer" onClick={() => handleServiceClick('testimonials')}>
+            Testimonials
+          </li>
         </ul>
       )}
     </div>
