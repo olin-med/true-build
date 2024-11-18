@@ -15,7 +15,7 @@ export default function MainContent() {
       {/* Image Section */}
       <div className="sm:ml-8 flex justify-center w-full sm:w-auto px-4 sm:px-0">
         <img
-          src="/TioLee.jpeg"  // Replace with your actual image path
+          src="/main.jpeg"  // Replace with your actual image path
           alt="About True Build"
           className="w-full max-w-xs sm:w-96 h-auto object-cover rounded-full border-2 border-[#304F8C]"
         />
