@@ -100,7 +100,7 @@ export default function ServicesSection({ highlightedService }: ServicesSectionP
   };
 
   return (
-    <div className="py-8 md:py-12 mt-12">
+    <div className="py-8 md:py-12 bg-gradient-to-b from-transparent to-black/90 mt-12">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl sm:text-3xl font-bold text-center text-[#fff6ed] mb-6 sm:mb-8">Our Services</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
@@ -108,16 +108,17 @@ export default function ServicesSection({ highlightedService }: ServicesSectionP
             <div
               key={service.id}
               id={service.id}
-              className={`bg-[#fff6ed] shadow-lg overflow-hidden transition-transform duration-1000 ${
+              className={`shadow-lg overflow-hidden transition-transform duration-1000 ${
                 activeService === service.id ? 'shadow-2xl scale-105' : ''
               }`}
             >
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-2">{service.title}</h3>
               <img src={service.image} alt={service.title} className="w-full h-40 sm:h-48 object-cover" />
-              <div className="px-4 sm:px-6 py-2 sm:py-4">
-                <h3 className="text-lg sm:text-xl font-semibold text-[#304F8C] mb-2">{service.title}</h3>
-                <p className="text-gray-700 text-sm sm:text-base mb-4">{service.description}</p>
+              <div className="py-2 sm:py-4">
+                
+                <p className="text-white text-sm font-bold sm:text-base mb-4">{service.description}</p>
               </div>
-              <div className="flex justify-end px-4 pb-4">
+              <div className="flex justify-center px-4 pb-4">
                 <button
                   className="bg-green-500 text-white text-sm sm:text-base font-semibold py-2 px-4 hover:bg-green-600 transition-colors duration-300 flex items-center"
                   onClick={() => handleWhatsAppRedirect(service.whatsappMessage)}

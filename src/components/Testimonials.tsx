@@ -2,7 +2,7 @@ import { AiFillStar } from "react-icons/ai";
 
 export default function Testimonials() {
   return (
-    <div id="testimonials" className="flex flex-col items-center">
+    <div id="testimonials" className="flex flex-col bg-black/90 items-center">
       <h2 className="text-2xl sm:text-3xl font-bold text-center text-[#fff6ed] mb-6 sm:mb-8">
         Testimonials
       </h2>
