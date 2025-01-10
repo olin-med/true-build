@@ -37,7 +37,7 @@ export default function Navbar({ onServiceSelect }: NavbarProps) {
       </div>
 
       {/* Desktop Menu (also right-aligned) */}
-      <ul className="hidden sm:flex space-x-8 font-bold text-white ml-auto">
+      <ul className="hidden sm:flex space-x-8 font-semibold text-white ml-auto">
         <li
           className="relative hover:bg-yellow-500 hover:text-[#fff6ed] cursor-pointer"
           onMouseEnter={() => setIsServicesDropdownOpen(true)}
