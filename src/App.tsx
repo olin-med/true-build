@@ -11,15 +11,19 @@ export default function App() {
   return (
     <div
       className="
-        relative
-        w-full
-        min-h-screen
-        bg-fixed
-        bg-[url('/image.png')]
-        bg-no-repeat
-        bg-cover
-      "
-    >
+          relative
+          w-full
+          min-h-screen
+          bg-fixed
+          bg-no-repeat
+          bg-cover
+
+          /* Mobile image by default */
+          bg-[url('/br.png')]
+
+          /* From md (768px) and up, use the other image */
+          md:bg-[url('/image.png')]"
+      >
       {/* Fixed Navbar */}
       <Navbar
         onServiceSelect={setHighlightedService}
