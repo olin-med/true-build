@@ -7,22 +7,35 @@ import Footer from "./components/Footer";
 
 export default function App() {
   const [highlightedService, setHighlightedService] = useState<string | null>(null);
-  
-  return (
-    <div className="w-full h-full">
-      <Navbar onServiceSelect={setHighlightedService} />
-      <div className="w-full h-full p-4 sm:p-8 md:p-16 bg-[#304F8C]">
-        {/* Main content section */}
-        <MainContent />
-        
-        {/* Services section with highlighted service logic */}
-        <ServicesSection highlightedService={highlightedService} />
 
-        {/* Testimonials section */}
-        <Testimonials />
+  return (
+    <div
+      className="
+        relative
+        w-full
+        min-h-screen
+        bg-fixed
+        bg-[url('/image.png')]
+        bg-no-repeat
+        bg-cover
+      "
+    >
+      {/* Fixed Navbar */}
+      <Navbar
+        onServiceSelect={setHighlightedService}
         
+      />
+
+      {/* Translucent overlay on top of the background */}
+      <div className="absolute inset-0 bg-black/40"></div>
+
+      {/* Main content container; add top padding so content sits below the navbar */}
+      <div className="relative z-10 pt-20">
+        <MainContent />
+        <ServicesSection highlightedService={highlightedService} />
+        <Testimonials />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }

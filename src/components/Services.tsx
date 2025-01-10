@@ -25,7 +25,7 @@ export default function ServicesSection({ highlightedService }: ServicesSectionP
     {
       id: 'painting',
       title: 'Painting',
-      image: '/Inspection.jpeg',
+      image: '/Painting.jpeg',
       description: 'High-quality painting services for both interior and exterior.',
       whatsappMessage: 'Hello, I would like to get a quote for your Painting services.'
     },
