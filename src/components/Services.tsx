@@ -108,7 +108,7 @@ export default function ServicesSection({ highlightedService }: ServicesSectionP
             <div
               key={service.id}
               id={service.id}
-              className={`shadow-lg overflow-hidden transition-transform duration-1000 ${
+              className={`shadow-lg overflow-hidden transition-transform hover:scale-[1.03] duration-700 ${
                 activeService === service.id ? 'shadow-2xl scale-105' : ''
               }`}
             >
