@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function AboutUs() {
   return (
     <div id="about-us" className="flex flex-col bg-black/90 items-center">
