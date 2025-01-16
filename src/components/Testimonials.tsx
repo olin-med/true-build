@@ -53,7 +53,7 @@ export default function Testimonials() {
         href="https://www.facebook.com/profile.php?id=100095209029942&sk=reviews"
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-8 px-6 py-3 mb-20 text-[#304F8C] bg-[#fff6ed] font-bold hover:bg-[#2b4374] hover:text-[#fff6ed] transition-colors"
+        className="mt-8 px-6 py-3 mb-20 bg-[#304F8C] text-[#fff6ed] font-bold hover:text-[#2b4374] hover:bg-[#fff6ed] transition-colors"
       >
         Add Your Review
       </a>

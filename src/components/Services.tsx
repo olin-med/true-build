@@ -18,56 +18,56 @@ export default function ServicesSection({ highlightedService }: ServicesSectionP
     {
       id: 'home-inspections',
       title: 'Home Inspections',
-      image: '/Inspection.jpeg',
+      image: '/insp.jpg',
       description: 'Ensure your home is up to code with professional inspections.',
       whatsappMessage: 'Hello, I am interested in getting a quote for Home Inspections.'
     },
     {
       id: 'painting',
       title: 'Painting',
-      image: '/Painting.jpeg',
+      image: '/ptg.jpg',
       description: 'High-quality painting services for both interior and exterior.',
       whatsappMessage: 'Hello, I would like to get a quote for your Painting services.'
     },
     {
       id: 'drywall',
       title: 'Drywall',
-      image: '/Drywall.jpeg',
+      image: '/dwall.jpg',
       description: 'Expert indoor and outdoor drywall installation and repair services.',
       whatsappMessage: 'Hello, I am looking for a quote for Drywall services.'
     },
     {
       id: 'flooring',
       title: 'Flooring',
-      image: '/Flooring.jpeg',
+      image: '/flring.png',
       description: 'Beautiful and durable flooring options for your home.',
       whatsappMessage: 'Hi, I would like to get a quote for Flooring services.'
     },
     {
       id: 'kitchen-bathroom',
       title: 'Kitchen and Bathroom',
-      image: '/Kitchen.jpeg',
+      image: '/ktch.jpg',
       description: 'Remodel your kitchen and bathroom with expert design and craftsmanship.',
       whatsappMessage: 'Hello, I am interested in a quote for Kitchen and Bathroom remodeling.'
     },
     {
       id: 'roofing',
       title: 'Roofing',
-      image: '/Inspection.jpeg',
+      image: '/roof.jpg',
       description: 'Reliable roofing services to protect your home from the elements.',
       whatsappMessage: 'Hello, I would like to get a quote for Roofing services.'
     },
     {
       id: 'driveways',
       title: 'Driveways',
-      image: '/Driveway.jpeg',
+      image: '/dway.png',
       description: 'Sturdy and beautiful driveway construction and repair.',
       whatsappMessage: 'Hello, I am interested in a quote for Driveways construction or repair.'
     },
     {
       id: 'pool-resurfacing',
       title: 'Pool Resurfacing',
-      image: '/Piscina.jpeg',
+      image: '/pool_r.jpg',
       description: 'Keep your pool in top shape with our resurfacing services.',
       whatsappMessage: 'Hi, I would like to get a quote for Pool Resurfacing services.'
     },

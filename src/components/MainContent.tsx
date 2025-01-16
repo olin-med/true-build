@@ -1,33 +1,63 @@
 export default function MainContent() {
   return (
-    <div className=" text-white mt-20 font-bold">
+    <div className="text-white mt-20 font-bold">
       <div className="max-w-screen-xl mx-auto px-4 py-8 sm:py-12 flex flex-col sm:flex-row sm:items-center sm:justify-between">
-        {/* Image Section (Left) */}
-        <div className="w-full sm:w-1/2 flex justify-center mb-8 sm:mb-0">
-          <img
-            src="/main.jpeg" // Replace with your actual image path
-            alt="About True Build"
-            className="w-full max-w-md h-auto object-cover rounded-full border-2 border-[#304F8C]"
-          />
+        
+        {/* Left Circle + Image */}
+        <div className="w-full sm:w-1/3 flex justify-center mb-8 sm:mb-0">
+          <div
+            className="w-96 h-96 rounded-full flex items-center justify-center"
+            style={{
+              background: 'radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%)'
+            }}
+          >
+            <a href="https://abcflorida.com/">
+              <img
+                src="/ABC_National_ABC-1_web.png"
+                alt="About True Build"
+                className="w-64 h-64 object-contain mb-4 cursor-pointer"
+              />
+            </a>
+          </div>
         </div>
 
-        {/* Text Section (Right) */}
-        <div className="w-full sm:w-1/2 text-7xl text-center sm:text-left px-4">
-          <h1 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">
-            True Build
-          </h1>
-          <p className="text-base text-justify sm:text-lg leading-relaxed">
-            True Build was founded after years of witnessing construction companies
-            building and renovating without any quality control of materials or adhering
-            to recognized building practices enforced by building code appliance.
-          </p>
-          <p className="mt-4 text-base text-justify sm:text-lg leading-relaxed">
-            We are a Construction Services Company who strive to provide the best
-            services available to our clients, with respected customer satisfaction
-            being our main focus. Our foundation is guided by strong core values
-            and led by credentialed industry experts.
-          </p>
+        {/* Middle Circle + Image (15% larger) */}
+        <div className="w-full sm:w-1/3 flex justify-center mb-8 sm:mb-0">
+          <div
+            className="w-96 h-96 rounded-full flex items-center justify-center"
+            style={{
+              background: 'radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%)'
+            }}
+          >
+            <a href="/logo-page">
+              <img
+                src="/Logo_e.png"
+                alt="About True Build"
+                className="w-96 h-96 object-contain rounded-full cursor-pointer"
+                style={{ transform: 'scale(1.20)' }} // 15% bigger
+              />
+            </a>
+          </div>
         </div>
+
+        {/* Right Circle + Image */}
+        <div className="w-full sm:w-1/3 flex justify-center mb-8 sm:mb-0">
+          <div
+            className="w-96 h-96 rounded-full flex items-center justify-center"
+            style={{
+              background: 'radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%)'
+            }}
+          >
+            <a href="https://www.nachi.org/productseals.htm">
+              <img
+                src="/seal.png"
+                alt="About True Build"
+                className="w-60 h-60 object-contain mt-4 cursor-pointer"
+              />
+            </a>
+          </div>
+        </div>
+        
       </div>
     </div>
   );

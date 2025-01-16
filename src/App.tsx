@@ -4,6 +4,7 @@ import MainContent from "./components/MainContent";
 import ServicesSection from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
+import AboutUs from './components/AboutUs';
 
 export default function App() {
   const [highlightedService, setHighlightedService] = useState<string | null>(null);
@@ -11,24 +12,18 @@ export default function App() {
   return (
     <div
       className="
-          relative
-          w-full
-          min-h-screen
-          bg-fixed
-          bg-no-repeat
-          bg-cover
-
-          /* Mobile image by default */
-          bg-[url('/br.png')]
-
-          /* From md (768px) and up, use the other image */
-          md:bg-[url('/image.png')]"
-      >
+        relative
+        w-full
+        min-h-screen
+        bg-fixed
+        bg-no-repeat
+        bg-cover
+        bg-[url('/br.png')]
+        md:bg-[url('/image.png')]
+      "
+    >
       {/* Fixed Navbar */}
-      <Navbar
-        onServiceSelect={setHighlightedService}
-        
-      />
+      <Navbar onServiceSelect={setHighlightedService} />
 
       {/* Translucent overlay on top of the background */}
       <div className="absolute inset-0 bg-black/40"></div>
@@ -38,7 +33,15 @@ export default function App() {
         <MainContent />
         <ServicesSection highlightedService={highlightedService} />
         <Testimonials />
-        <Footer />
+
+        {/* Give AboutUs an ID for scrolling */}
+        <div id="about-us">
+          <AboutUs />
+        </div>
+        <div id="footer">
+          <Footer />
+        </div>
+        
       </div>
     </div>
   );
